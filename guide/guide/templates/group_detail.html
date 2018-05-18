@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+          <h1>{{ groups.name }}</h1>
+        <a class="btn btn-default" href="{% url 'group_update' pk=groups.pk %}">
+          <span class="glyphicon glyphicon-pencil"></span>
+        </a>
+
+        <a class="btn btn-default" href="{% url 'group_delete' pk=groups.pk %}">
+          <span class="glyphicon glyphicon-trash"></span>
+        </a>
+{% endblock %}

@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% for groups in object_list %}
+            <h1><a href="{% url 'group_detail' pk=groups.pk %}">{{ groups.name }}</h1>
+    {% endfor %}
+{% endblock %}

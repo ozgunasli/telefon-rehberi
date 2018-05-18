@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% for phones in object_list %}
+            <h1><a href="{% url 'number_detail' pk=phones.pk %}">
+              {{ phones.firstname }}  {{ phones.lastname }}</a>
+            </h1>
+            <p>{{ phones.number }}</p>
+    {% endfor %}
+{% endblock %}

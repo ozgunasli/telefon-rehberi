@@ -1,0 +1,32 @@
+body {
+    padding-left: 0px;
+}
+h1 a {
+    color: #7e7e15bd;
+    font-family: 'Lobster';
+}
+.page-header {
+    background-color: #336666;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color: #ffffff;
+    font-size: 36pt;
+    text-decoration: none;
+}
+.content {
+    margin-left: 40px;
+}
+h1, h2, h3, h4 {
+    font-family: 'Lobster', cursive;
+}
+.save {
+    float: right;
+}
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}

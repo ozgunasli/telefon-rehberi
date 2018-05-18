@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+          <h1>{{ numbers.firstname }}  {{ numbers.lastname }}</h1>
+          <p>{{ numbers.number }}</p>
+          <p>{{ numbers.email }}</p>
+          <p>{{ numbers.group }}</p>
+        <a class="btn btn-default" href="{% url 'number_update' pk=numbers.pk %}">
+          <span class="glyphicon glyphicon-pencil"></span>
+        </a>
+
+        <a class="btn btn-default" href="{% url 'number_delete' pk=numbers.pk %}">
+          <span class="glyphicon glyphicon-trash"></span>
+        </a>
+{% endblock %}
